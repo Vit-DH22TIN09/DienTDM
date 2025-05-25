@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <title>Thành viên</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+     
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .member {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+    }
+
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .member h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .member p {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Tắt gạch chân cho các link lớp member */
+a.member,
+a.member:link,
+a.member:visited {
+  text-decoration: none;
+  color: inherit; /* kế thừa màu chữ của .member để không đổi màu link */
+}
+
+/* Nếu muốn hover cũng không gạch chân */
+a.member:hover,
+a.member:active {
+  text-decoration: none;
+}
+
+  </style>
+
+<style>
+.custom-navbar {
+  background-color: transparent;  /* Làm nền trong suốt */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.custom-navbar a {
+  color: white; /* Hoặc đổi sang màu bạn muốn */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.custom-navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.custom-navbar a.active {
+  color: blue; /* Màu chữ khi đang ở trang hiện tại */
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<video autoplay muted loop id="bg-video">
+  <source src="vd1.mp4" type="video/mp4">
+  Trình duyệt của bạn không hỗ trợ thẻ video.
+</video>
+
+
+<div class="custom-navbar">
+  <a href="trangchu.html" class="w3-bar-item w3-button">Trang Chủ</a>
+  <a href="sukien.html" class="w3-bar-item w3-button">Sự kiện</a>
+  <a href="tv.html" class="w3-bar-item w3-button active">Thành viên</a>
+  <a href="dangnhap.html" class="w3-bar-item w3-button">Đăng nhập/Đăng ký</a>
+</div>
+
+
+  <h1>THÀNH VIÊN</h1>
+
+  <div class="team-container">
+    <a href="th_index.html" class="member">
+      <img src="th.jpg" alt="Nguyễn Thúy Hằng">
+      <h3>Nguyễn Thúy Hằng</h3>
+      <p>Trưởng nhóm</p>
+    </a>
+
+    <a href="kd_index.html" class="member">
+      <img src="kd.jpg" alt="ntkd">
+      <h3>Nguyễn Thị Kim Duyên</h3>
+      <p>Thành viên</p>
+    </a>
+
+    <a href="hn_index.html" class="member">
+      <img src="hn.jpg" alt="lthn">
+      <h3>Lê Thị Hồng Ngọc</h3>
+      <p>Thành viên</p>
+    </a>
+
+    <a href="tn_index.html" class="member">
+      <img src="tn.jpg" alt="ntstn">
+      <h3>Nguyễn Trần Sương Thảo Nguyệt</h3>
+      <p>Thành viên</p>
+    </a>
+
+    <a href="tv_index.html" class="member">
+      <img src="tv.jpg" alt="thuyvy">
+      <h3>Nguyễn Võ Thúy Vy</h3>
+      <p>Thành viên</p>
+    </a>
+  </div>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>Kết nối với chúng tôi:</h4>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook" /></a>
+        <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter" /></a>
+        <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" /></a>
+        <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Thông tin liên hệ:</h4>
+      <p>Email: contact@example.com</p>
+      <p>Điện thoại: 0123 456 789</p>
+      <p>Địa chỉ: Trường Đại học Nam Cần Thơ</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Thông tin</h4>
+      <p>&copy; 2025 Nhóm phát triển.</p>
+      <p>Mọi quyền được bảo lưu.</p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

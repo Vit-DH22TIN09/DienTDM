@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sự kiện nổi bật</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #F0F8FF;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .event-section {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .event-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .event-item {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .event-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .event-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .event-item h3 {
+      padding: 15px 15px 5px;
+      font-size: 20px;
+    }
+
+    .event-item p {
+      padding: 0 15px 15px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .event-item a {
+      display: block;
+      padding: 0 15px 15px;
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .event-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+
+
+<style>
+.custom-navbar {
+  background-color: transparent;  /* Làm nền trong suốt */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.custom-navbar a {
+  color: black; /* Hoặc đổi sang màu bạn muốn */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.custom-navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.custom-navbar a.active {
+  color: blue; /* Màu chữ khi đang ở trang hiện tại */
+}
+
+
+</style>
+
+
+<style>
+.post-list {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.post-item {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+}
+
+.post-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-item h3 {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.post-item a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.post-item p {
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+
+
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="custom-navbar">
+  <a href="trangchu.html" class="w3-bar-item w3-button">Trang Chủ</a>
+  <a href="sukien.html" class="w3-bar-item w3-button active">Sự kiện</a>
+  <a href="tv.html" class="w3-bar-item w3-button">Thành viên</a>
+  <a href="dangnhap.html" class="w3-bar-item w3-button">Đăng nhập/Đăng ký</a>
+</div>
+
+<header>
+  <h1>
+    <img src="fire.png" alt="fire icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+    Sự kiện Nổi Bật
+  </h1>
+</header>
+
+<section class="event-section">
+  <h2>Tham gia các sự kiện hấp dẫn trong thời gian tới cùng nhóm chúng mình nhé!</h2>
+
+  <div class="event-grid">
+
+    <div class="event-item">
+      <img src="trienlam.jpg" alt="trienlamnghethuat">
+      <h3>Hà Nội đa sắc tại triển lãm ‘Những người bạn’</h3>
+      <p>Triển lãm “Những người bạn” - được tổ chức tại Bảo tàng Mỹ thuật Việt Nam, đã phần nào đưa không khí thưởng thức nghệ thuật tại đất Thăng Long mang nhiều nét thanh lịch của quá khứ Tràng An xưa thêm tươi mới và rạng rỡ của tháng năm.</p>
+      <a href="su_kien1.html">Xem chi tiết</a>
+    </div>
+
+    <div class="event-item">
+      <img src="trienlam2.jpg" alt="daitiecanhsang">
+      <h3>Nguyễn Thu Hương và tình yêu tranh lụa</h3>
+      <p>Tranh lụa của Nguyễn Thu Hương là một hòa âm ở tâm hồn người nữ hiện đại - kín đáo, e lệ mà vẫn mạnh mẽ và tình tứ. Lụa của Nguyễn Thu Hương không tận dụng sự óng ả để đặc tả làn da cũng như không làm loang màu để đổ dài những mái tóc mây...</p>
+      <a href="su_kien2.html">Xem chi tiết</a>
+    </div>
+
+    <div class="event-item">
+      <img src="trienlam1.jpg" alt="dulich">
+      <h3>Triển lãm Hồ Chí Minh trong nghệ thuật tạo hình</h3>
+      <p>Triển lãm Hồ Chí Minh trong nghệ thuật tạo hình giới thiệu 60 tác phẩm được chọn lọc trong bộ sưu tập hàng trăm tác phẩm sáng tác của các họa sỹ, nhà điêu khắc, nghệ nhân Việt Nam và của nước ngoài về Chủ tịch Hồ Chí Minh,...</p>
+      <a href="su_kien3.html">Xem chi tiết</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>Kết nối với chúng tôi:</h4>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook" /></a>
+        <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter" /></a>
+        <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" /></a>
+        <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Thông tin liên hệ:</h4>
+      <p>Email: contact@example.com</p>
+      <p>Điện thoại: 0123 456 789</p>
+      <p>Địa chỉ: Trường Đại học Nam Cần Thơ</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Thông tin</h4>
+      <p>&copy; 2025 Nhóm phát triển.</p>
+      <p>Mọi quyền được bảo lưu.</p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

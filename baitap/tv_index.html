@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nguyễn Thúy Hằng</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f2f2f2; }
+    .profile { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+    .profile img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+    .back { display: block; margin-top: 20px; text-decoration: none; color: #333; }
+  </style>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+     
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .member {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+    }
+
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .member h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .member p {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Tắt gạch chân cho các link lớp member */
+a.member,
+a.member:link,
+a.member:visited {
+  text-decoration: none;
+  color: inherit; /* kế thừa màu chữ của .member để không đổi màu link */
+}
+
+/* Nếu muốn hover cũng không gạch chân */
+a.member:hover,
+a.member:active {
+  text-decoration: none;
+}
+
+  </style>
+
+<style>
+.custom-navbar {
+  background-color: transparent;  /* Làm nền trong suốt */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.custom-navbar a {
+  color: white; /* Hoặc đổi sang màu bạn muốn */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.custom-navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+</style>
+</head>
+<body>
+<div class="custom-navbar">
+  <a href="trangchu.html" class="w3-bar-item w3-button">Trang Chủ</a>
+  <a href="sukien.html" class="w3-bar-item w3-button">Sự kiện</a>
+  <a href="tv.html" class="w3-bar-item w3-button">Thành viên</a>
+  <a href="dangnhap.html" class="w3-bar-item w3-button">Đăng nhập/Đăng ký</a>
+</div>
+
+  <div class="profile">
+    <img src="tv.jpg" alt="thuyvy" />
+    <h1>Nguyễn Võ Thúy Vy</h1>
+    <p><strong>Chức vụ:</strong> Thành viên</p>
+    <p><strong>Mã số:</strong> 213009</p>
+    <p>Xin chào! Mình là Nguyễn Võ Thúy Vy. Hiện tại, mình đang là sinh viên và mình rất thích Văn học và Hội họa.</p>
+   </div>
+</body>
+</html>

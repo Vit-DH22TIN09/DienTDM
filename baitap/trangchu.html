@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <title>Thành viên</title>
+
+<style>
+.hero-banner {
+  background-image: url('bannerr.jpg');
+  background-size: contain; /* hoặc: background-size: 100% auto; */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto; /* Có thể đặt cố định hoặc auto nếu muốn co theo nội dung */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/*.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ tối giúp chữ nổi bật */
+}*/
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.banner-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.banner-button:hover {
+  background-color: #0056b3;
+}
+</style>
+
+
+<style>
+.custom-navbar {
+  background-color: transparent;  /* Làm nền trong suốt */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.custom-navbar a {
+  color: black; /* Hoặc đổi sang màu bạn muốn */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.custom-navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.custom-navbar a.active {
+  color: blue; /* Màu chữ khi đang ở trang hiện tại */
+}
+
+
+</style>
+
+
+<style>
+.post-list {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.post-item {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+}
+
+.post-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-item h3 {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.post-item a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.post-item p {
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+
+
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="custom-navbar">
+  <a href="trangchu.html" class="w3-bar-item w3-button active">Trang Chủ</a>
+  <a href="sukien.html" class="w3-bar-item w3-button">Sự kiện</a>
+  <a href="tv.html" class="w3-bar-item w3-button">Thành viên</a>
+  <a href="dangnhap.html" class="w3-bar-item w3-button">Đăng nhập/Đăng ký</a>
+</div>
+
+<section class="hero-banner">
+  <img src="bannerr.jpg" alt="Banner" style="width: 100%; height: auto;">
+</section>
+
+
+
+
+
+<!-- Danh sách bài viết -->
+<section class="post-list">
+  <h2>Bài Viết Mới Nhất</h2>
+  <div class="post-grid">
+    
+    <!-- Bài viết 1 -->
+    <div class="post-item">
+      <img src="hoihoa.jpg" alt="Vung Tau">
+      <h3><a href="baiviet1.html">Tranh sơn mài "Vườn xuân Trung Nam Bắc"</a></h3>
+      <p>Bức họa “Vườn xuân Trung Nam Bắc” do cố họa sĩ Nguyễn Gia Trí (1908 – 1993) tạo nên trong khoảng 20 năm (1969 – 1989) với 9 mảnh ván ghép lại và cũng là tác phẩm cuối cùng của ông...</p>
+    </div>
+
+    <!-- Bài viết 2 -->
+    <div class="post-item">
+      <img src="nhungngaythoau.jpg" alt="nnta">
+      <h3><a href="baiviet2.html">Những Ngày Thơ Ấu - Nguyên Hồng</a></h3>
+      <p>Những Ngày Thơ Ấu là hồi ký chân thực về tuổi thơ của Nguyên Hồng, kết hợp hài hòa giữa niềm vui, nỗi buồn, và sự khát khao hạnh phúc...</p>
+    </div>
+
+    <!-- Bài viết 3 -->
+    <div class="post-item">
+      <img src="monalisa.jpg" alt="Đà Nẵng">
+      <h3><a href="baiviet3.html">Bức tranh "Mona Lisa"</a></h3>
+      <p>Bức "Mona Lisa" khắc họa một người phụ nữ bí ẩn với nụ cười mang nhiều ẩn số. Dù vậy, cho tới nay, người ta cũng đã nắm được một số thông tin cụ thể xung quanh tác phẩm này...</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>Kết nối với chúng tôi:</h4>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook" /></a>
+        <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter" /></a>
+        <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" /></a>
+        <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Thông tin liên hệ:</h4>
+      <p>Email: contact@example.com</p>
+      <p>Điện thoại: 0123 456 789</p>
+      <p>Địa chỉ: Trường Đại học Nam Cần Thơ</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Thông tin</h4>
+      <p>&copy; 2025 Nhóm phát triển.</p>
+      <p>Mọi quyền được bảo lưu.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>

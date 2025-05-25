@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <style>
+    body { 
+	background: #f2f2f2;
+ 	margin: 0;
+ }
+    .form-container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; }
+    .form-container h2 { text-align: center; margin-bottom: 20px; }
+    .form-container .w3-input { margin-bottom: 15px; }
+    .form-container button { width: 100%; }
+    .form-container .link { margin-top: 10px; text-align: center; }
+  </style>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+     
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .member {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+    }
+
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .member h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .member p {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Tắt gạch chân cho các link lớp member */
+a.member,
+a.member:link,
+a.member:visited {
+  text-decoration: none;
+  color: inherit; /* kế thừa màu chữ của .member để không đổi màu link */
+}
+
+/* Nếu muốn hover cũng không gạch chân */
+a.member:hover,
+a.member:active {
+  text-decoration: none;
+}
+
+  </style>
+
+<style>
+.custom-navbar {
+  background-color: transparent;  /* Làm nền trong suốt */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.custom-navbar a {
+  color: white; /* Hoặc đổi sang màu bạn muốn */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.custom-navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.custom-navbar a.active {
+  color: blue; /* Màu chữ khi đang ở trang hiện tại */
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* trừ đi chiều cao của navbar */
+  padding-top: 60px; /* tránh bị che bởi navbar nếu có position fixed */
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="custom-navbar">
+  <a href="trangchu.html" class="w3-bar-item w3-button">Trang Chủ</a>
+  <a href="sukien.html" class="w3-bar-item w3-button">Sự kiện</a>
+  <a href="tv.html" class="w3-bar-item w3-button">Thành viên</a>
+  <a href="dangnhap.html" class="w3-bar-item w3-button active">Đăng nhập/Đăng ký</a>
+</div>
+
+<div class="main-content">
+  <div class="form-container w3-card">
+    <h2>Đăng nhập</h2>
+    <form action="/login" method="POST">
+      <input class="w3-input w3-border" type="email" name="email" placeholder="Email" required>
+      <input class="w3-input w3-border" type="password" name="password" placeholder="Mật khẩu" required>
+      <button class="w3-button w3-blue w3-round" type="submit">Đăng nhập</button>
+    </form>
+    <div class="link">
+      <a href="dangky.html">Chưa có tài khoản? Đăng ký</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
